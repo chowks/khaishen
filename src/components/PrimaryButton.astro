@@ -1,0 +1,15 @@
+---
+export interface PrimaryButtonProps {
+  href: string;
+}
+
+const { href } = Astro.props;
+---
+
+<a
+  href={href}
+  class="text-sm font-semibold leading-6 text-white py-3 px-14 rounded-lg bg-gradient-to-r from-indigo-600 to-purple-700"
+>
+  <slot />
+  <span aria-hidden="true">&rarr;</span>
+</a>
