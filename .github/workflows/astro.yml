@@ -42,7 +42,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
           cache-dependency-path: ${{ env.BUILD_PATH }}/pnpm-lock.yaml
       - name: Setup Pages
         id: pages
