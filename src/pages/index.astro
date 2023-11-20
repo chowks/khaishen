@@ -1,11 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import MuiLogo from './mui-logo.svg';
+import { Icon } from 'astro-icon';
 import Navbar, { NavigationProps } from 'src/components/Navbar.astro';
+import IconWithFrame from 'src/components/IconWithFrame.astro';
 
 const navigations: NavigationProps[] = [
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
+];
+
+const icons = [
+  'css-logo',
+  'go-logo',
+  'html-logo',
+  'js-logo',
+  'mui-logo',
+  'react-logo',
+  'ts-logo',
+  'tw-logo',
 ];
 ---
 
@@ -29,16 +43,18 @@ const navigations: NavigationProps[] = [
 
       <!-- right logo -->
       <div class="text-center"></div>
-
-      <!-- tech stack + language -->
-
-      <!-- about me + life photo -->
-
-      <!-- portfolio showcase summary -->
-
-      <!-- contact me summary -->
-
-      <!-- footer -->
     </div>
+
+    <!-- tech stack + language -->
+    <div class="flex justify-evenly">
+      {icons.map((icon) => <IconWithFrame icon={icon} />)}
+    </div>
+    <!-- about me + life photo -->
+
+    <!-- portfolio showcase summary -->
+
+    <!-- contact me summary -->
+
+    <!-- footer -->
   </main>
 </Layout>

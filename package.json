@@ -22,6 +22,7 @@
     "@typescript-eslint/parser": "^5.60.1",
     "@vitejs/plugin-basic-ssl": "^1.0.1",
     "astro": "^2.7.1",
+    "astro-icon": "^0.8.1",
     "eslint": "^8.43.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.8.0",
